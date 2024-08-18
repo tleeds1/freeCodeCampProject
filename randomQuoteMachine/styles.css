@@ -1,0 +1,102 @@
+:root {
+    --main-black: #0a0a23;
+    --main-white: #f5f6f7;
+    --main-purple: #5a01a7;
+    --main-green: #00471b;
+    --main-orange: #feac32;
+    --main-blue: #99c9ff;
+    --main-red-bg: #A61415;
+    --screen: #AF9999;
+    --line-sep: #79060696;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 500px;
+    overflow-y: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #ccc;
+    color: #ccc;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#quote-box {
+    border-radius: 3px;
+    position: relative;
+    top: 120px;
+    width: 450px;
+    padding: 40px 50px;
+    display: table;
+    background-color: #fff;
+}
+
+#box-text {
+    font-size: 24px;
+}
+
+#box-author {
+    display: flex;
+    justify-content: right;
+    margin: 20px
+}
+
+#box-footer {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.btn {
+    background-color: #ccc;
+    color: #fff;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn-default {
+    border: none;
+}
+
+#new-quote {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#box-footer i {
+    color: #fff;
+    min-width: 40px;
+    position: relative;
+    top: 11px;
+}
+
+.btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.footer {
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #fff;
+}
+
+a:hover {
+    opacity: 0.7;
+}
