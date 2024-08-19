@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8d8d8d;
+    display: block;
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    user-select: none;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#heading {
+    position: absolute;
+    top: 16vh;
+    font-style: italic;
+}
+.inner-container {
+    outline: 5px solid orange;
+    position: relative;
+    width: 660px;
+    text-align: center;
+    background-color: #b3b3b3;
+}
+
+.inner-container .pad-bank {
+    width: 332px;
+    height: 272px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.inner-container .pad-bank .drum-pad {
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding-top: 35px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: grey;
+    margin-top: 10px;
+    box-shadow: black 3px 3px 5px;
+}
+
+.inner-container .controls-container {
+    width: 240px;
+    height: 272px;
+    display: inline-block;
+    margin: 40px 20px 0 10px;
+    vertical-align: top;
+}
+
+.inner-container .controls-container #display {
+    width: 200px;
+    background-color: gray;
+    margin: 15px auto;
+    padding: 15px;
+    box-sizing: border-box;
+    height: 50px;
+}
+
+.volume-slider {
+    margin-top: 20px;
+}
+
+#volume {
+    width: 200px;
+}
+
+.hide {
+    display: none;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+#footer a {
+    margin-left: 5px;
+    text-decoration: none;
+    color: blue;
+    font-style: italic;
+}
+
+a:visited {
+    text-decoration: none;
+    color: blue;
+}
+
+#footer a:hover {
+    opacity: 0.8;
+    color: orange;
+}
+
+@media screen and (max-width: 720px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .inner-container {
+        outline: 5px solid orange;
+        position: relative;
+        width: 90%;
+        text-align: center;
+        background-color: #b3b3b3;
+    }
+}

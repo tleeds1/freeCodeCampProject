@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css">
+    <title>Drum Machine</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading">Dream Drum</h1>
+        <div class="inner-container" id="drum-machine">
+            <div class="pad-bank">
+                <div class="row">
+                    <div class="drum-pad col-md-4 btn" id="Heater-1">
+                        Q
+                        <audio id="Q" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-1.mp3" class="clip"></audio>
+                    </div>
+                    <div class="drum-pad col-md-4 btn" id="Heater-2">
+                        W
+                        <audio id="W" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-2.mp3" class="clip"></audio>
+                    </div>
+                    <div class="drum-pad col-md-4 btn" id="Heater-3">
+                        E
+                        <audio id="E" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-3.mp3" class="clip"></audio>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="drum-pad col-md-4 btn" id="Heater-4">
+                        A
+                        <audio id="A" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-4_1.mp3" class="clip"></audio>
+                    </div>
+                    <div class="drum-pad col-md-4 btn" id="Clap">
+                        S
+                        <audio id="S" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-6.mp3" class="clip"></audio>
+                    </div>
+                    <div class="drum-pad col-md-4 btn" id="Open-HH">
+                        D
+                        <audio id="D" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Dsc_Oh.mp3" class="clip"></audio>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="drum-pad col-md-4 btn" id="Kick-n'-Hat">
+                        Z
+                        <audio id="Z" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Kick_n_Hat.mp3" class="clip"></audio>
+                    </div>
+                    <div class="drum-pad col-md-4 btn" id="Kick">
+                        X
+                        <audio id="X" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/RP4_KICK_1.mp3" class="clip"></audio>
+                    </div>
+                    <div class="drum-pad col-md-4 btn" id="Closed-HH">
+                        C
+                        <audio id="C" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Cev_H2.mp3" class="clip"></audio>
+                    </div>
+                </div>
+            </div>
+            <div class="controls-container">
+                <p id="display"></p>
+                <div class="volume-slider">
+                    <label for="volume">Volume</label>
+                    <input type="range" id="volume" min="0" max="100" step="1" value="50">
+                </div>
+                <div id="footer">
+                    by <a href="https://github.com/tleeds1" target="_blank">tleeds1</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script crossorigin="" src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin="" src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.3/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
