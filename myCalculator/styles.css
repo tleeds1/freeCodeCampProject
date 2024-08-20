@@ -1,0 +1,141 @@
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+@font-face {
+  font-family: 'Digital';
+  src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot');
+  src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7')
+      format('svg');
+}
+
+body {
+    background-color: #8d8d8d;
+    display: block;
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    user-select: none;
+}
+
+
+.container {
+    background-color: #8d8d8d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app {
+    border: 2px solid #47476b;
+    padding: 20px 20px 10px 20px;
+    background: black;
+    width: 320px;
+    position: relative;
+}
+
+.formula-screen {
+    min-height: 20px;
+    font-family: digital;
+    font-size: 20px;
+    color: orange;
+    text-align: right;
+    vertical-align: text-top;
+    line-height: 20px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.output-screen {
+    height: 30px;
+    font-size: 29px;
+    font-family: digital;
+    color: white;
+    text-align: right;
+    line-height: 35px;
+    border-top: 1px solid orange;
+}
+
+.grid {
+    margin-top: 10px;
+}
+
+button {
+    height: 65px;
+    color: white;
+    outline: 1px solid black;
+    border: none;
+    background: #4d4d4d;
+    font-family: Share Tech Mono, monospace;
+    font-size: 20px;
+    cursor: default;
+}
+
+button:hover {
+    outline: 1px solid white;
+    color: black;
+    z-index: 10;
+}
+
+#heading {
+    position: absolute;
+    top: 16vh;
+    font-style: italic;
+}
+
+.volume-slider {
+    margin-top: 20px;
+}
+
+#volume {
+    width: 200px;
+}
+
+.hide {
+    display: none;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: white;
+}
+#footer a {
+    margin-left: 5px;
+    text-decoration: none;
+    color: blue;
+    font-style: italic;
+}
+
+a:visited {
+    text-decoration: none;
+    color: blue;
+}
+
+#footer a:hover {
+    opacity: 0.8;
+    color: orange;
+}
+
+@media screen and (max-width: 720px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .inner-container {
+        outline: 5px solid orange;
+        position: relative;
+        width: 90%;
+        text-align: center;
+        background-color: #b3b3b3;
+    }
+}
