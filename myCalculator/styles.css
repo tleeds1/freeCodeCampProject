@@ -82,24 +82,6 @@ button:hover {
     z-index: 10;
 }
 
-#heading {
-    position: absolute;
-    top: 16vh;
-    font-style: italic;
-}
-
-.volume-slider {
-    margin-top: 20px;
-}
-
-#volume {
-    width: 200px;
-}
-
-.hide {
-    display: none;
-}
-
 #footer {
     display: flex;
     justify-content: center;
@@ -121,21 +103,4 @@ a:visited {
 #footer a:hover {
     opacity: 0.8;
     color: orange;
-}
-
-@media screen and (max-width: 720px) {
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-    
-    .inner-container {
-        outline: 5px solid orange;
-        position: relative;
-        width: 90%;
-        text-align: center;
-        background-color: #b3b3b3;
-    }
 }
