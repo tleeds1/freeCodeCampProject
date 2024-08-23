@@ -126,7 +126,7 @@ req.onload = function(){
           .style('width', barWidth + 'px')
           .style('opacity', 0.9)
           .style('left', i * barWidth + 0 + 'px')
-          .style('top', height - d + 'px')
+          .style('top', height + margin - d + 'px')
           .style('transform', 'translateX(60px)');
         tooltip.transition().duration(200).style('opacity', 0.9);
         tooltip
