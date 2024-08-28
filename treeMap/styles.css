@@ -1,0 +1,82 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tile-text {
+  cursor: default;
+}
+
+#main {
+  width: 1000px;
+  display: flex;
+  padding-top: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+svg {
+  font: 10px sans-serif;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+div.tooltip {
+  position: absolute;
+  padding: 10px;
+  font: 12px Arial;
+  background: rgba(255, 255, 204, 0.9);
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.6);
+  border: 0px;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+#title {
+  font-size: 3rem;
+}
+
+#description {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#source {
+  align-self: flex-end;
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(89, 152, 12);
+}
+
+a:hover {
+  color: orange;
+}
+
+a:visited {
+  color: rgb(89, 152, 12);
+}
+
+.tile-text {
+  font-size: 0.8rem;
+}
+
+#legend {
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+}
